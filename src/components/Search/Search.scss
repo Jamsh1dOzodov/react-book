@@ -1,0 +1,39 @@
+.search {
+    padding: 0 10px;
+
+    //search__title
+    &__title {
+        color: #000;
+        font-size: 30px;
+        margin-bottom: 5px;
+        font-weight: 400;
+    }
+
+    //search-form
+    &-form {
+        position: relative;
+        text-align: center;
+
+        //search-form__btn
+        &__btn {
+            position: absolute;
+            border: none;
+            background: transparent;
+            left: 7px;
+            top: 9px;
+        }
+
+        //search-form__input
+        &__input {
+            border: none;
+            border-radius: 10px;
+            background: #F3F2F2;
+            color: rgba(0, 0, 0, 0.40);
+            font-size: 15px;
+            padding: 10px 5px 10px 42px;
+            width: 346px;
+            height: 25px;
+            outline: none;
+        }
+    }
+}
