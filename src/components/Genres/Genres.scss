@@ -1,0 +1,17 @@
+.genre {
+    border-radius: 30px;
+    background: #D1F8DE;
+    padding: 2px 9px 3px;
+
+    //genre__text
+    &__text {
+        color: #000;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    //genre--pink
+    &--pink{
+        background: #F1DAFC;
+    }
+}

@@ -1,13 +1,20 @@
 .search {
     padding: 0 10px;
 
-    //search__title
-    &__title {
-        color: #000;
-        font-size: 30px;
-        margin-bottom: 5px;
-        font-weight: 400;
+    //search-top
+    &-top {
+        display: flex;
+        
+        //search-top__title
+        &__title {
+            margin-left: 10px;
+            color: #000;
+            font-size: 30px;
+            margin-bottom: 5px;
+            font-weight: 400;
+        }
     }
+
 
     //search-form
     &-form {

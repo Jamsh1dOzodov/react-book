@@ -8,10 +8,12 @@ const Search = (props) => {
         <>
             <div className='search'>
                 <div className='container'>
-                    {props.back &&
-                        <img src={arrow} alt="arrow icon" />
-                    }
-                    <h1 className='search__title'>{props.title}</h1>
+                    <div className="search-top">
+                        {props.back &&
+                            <img src={arrow} alt="arrow icon" />
+                        }
+                        <h1 className='search-top__title'>{props.title}</h1>
+                    </div>
                     <form className='search-form' action="">
                         <button className='search-form__btn'><img src={search} alt="" /></button>
                         <input className='search-form__input' type="text" placeholder='Поиск' />

@@ -1,0 +1,44 @@
+.book {
+    position: relative;
+    max-width: 31%;
+    flex-basis: 31%;
+
+    //book__likeBtn
+    &__likeBtn {
+        border-radius: 50%;
+        border: 1px solid #000;
+        padding: 3px 3px 1px 3px;
+        background-color: #FFF;
+        position: absolute;
+        top: 5px;
+        right: 11px;
+    }
+
+    //book__likeImg
+    &__likeImg {
+        width: 17px;
+        height: 17px;
+        fill: white;
+    }
+
+    //book--liked
+    &--liked{
+        
+        .book__likeImg{
+            fill: red;
+        }
+    }
+
+    //book__name
+    &__name {
+        color: #000;
+        font-size: 10px;
+        margin-top: 5px;
+    }
+
+    //book__author
+    &__author {
+        color: rgba(0, 0, 0, 0.50);
+        font-size: 10px;
+    }
+}
