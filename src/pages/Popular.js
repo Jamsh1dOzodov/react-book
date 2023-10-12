@@ -12,7 +12,52 @@ import psihologiya from '../assets/images/psihologiya.png';
 
 
 const Popular = () => {
-
+    const popBookData = [
+        {
+            imgUrl: book_harry_potter,
+            title: 'Гарри Поттер и дары смерти',
+            rating: '4.1',
+            author: 'Джоан Роулинг',
+            id: 1,
+        },
+        {
+            imgUrl: book_ring,
+            title: 'Властелин Колец. Две твердыни',
+            rating: '4.5',
+            author: 'Джон Р.Р Толкин',
+            id: 2,
+        },
+        {
+            imgUrl: book_osten,
+            title: 'Гордость и предубеждение',
+            rating: '4.0',
+            author: 'Джейн Остен',
+            id: 3,
+        },
+    ]
+    const recomendBookData = [
+        {
+            imgUrl: neNoy,
+            title: 'Гарри Поттер и дары смерти',
+            rating: '4.1',
+            author: 'Джоан Роулинг',
+            id: 1,
+        },
+        {
+            imgUrl: jiviLegko,
+            title: 'Властелин Колец. Две твердыни',
+            rating: '4.5',
+            author: 'Джон Р.Р Толкин',
+            id: 2,
+        },
+        {
+            imgUrl: psihologiya,
+            title: 'Гордость и предубеждение',
+            rating: '4.0',
+            author: 'Джейн Остен',
+            id: 3,
+        },
+    ]
 
     return (
         <>
@@ -24,9 +69,9 @@ const Popular = () => {
                         <p className="popularBooks__more">Посмотреть все &gt;</p>
                     </div>
                     <div className="wrapper">
-                        <Book liked={false} img={book_harry_potter} name='Гарри Поттер и дары смерти' author='Джоан Роулинг' mark='(4.1)' />
-                        <Book liked={false} img={book_ring} name='Властелин Колец. Две твердыни' author='Джон Р.Р Толкин' mark='(4.5)' />
-                        <Book liked={true} img={book_osten} name='Гордость и предубеждение' author='Джейн Остен' mark='(4.0)' />
+                        {popBookData.map((book) =>
+                            <Book key={book.id} img={book.imgUrl} name={book.title} author={book.author} mark={book.rating} />
+                        )}
                     </div>
                 </div>
             </div>
@@ -64,9 +109,9 @@ const Popular = () => {
                     <h2 className="recommendation__title">Рекомендации</h2>
                 </div>
                 <div className="wrapper">
-                    <Book img={neNoy} mark='(4.0)' />
-                    <Book img={jiviLegko} mark='(4.0)' />
-                    <Book liked={true} img={psihologiya} mark='(4.0)' />
+                    {recomendBookData.map((book) =>
+                        <Book key={book.id} img={book.imgUrl} name={book.title} author={book.author} mark={book.rating} />
+                    )}
                 </div>
             </div>
             <Navbar active='popular' />

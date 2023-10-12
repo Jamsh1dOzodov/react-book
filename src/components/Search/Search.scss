@@ -4,7 +4,8 @@
     //search-top
     &-top {
         display: flex;
-        
+        align-items: center;
+
         //search-top__title
         &__title {
             margin-left: 10px;
@@ -12,6 +13,12 @@
             font-size: 30px;
             margin-bottom: 5px;
             font-weight: 400;
+        }
+
+        //search-top__arrow
+        &__arrow {
+            width: 12px;
+            height: 21px;
         }
     }
 

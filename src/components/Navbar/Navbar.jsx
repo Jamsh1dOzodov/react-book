@@ -16,7 +16,7 @@ const Navbar = (props) => {
                 <ul className='nav'>
                     <li className={props.active==='library' ? 'nav-item nav-item--active':'nav-item'}>
                         <Link className='nav-item__link' to="">
-                            <svg class="img">
+                            <svg className="img">
                                 <use href={`${sprite}#icon-book`}></use>
                             </svg>
                             <span className='nav-item__text'>Библитотека</span>
@@ -24,7 +24,7 @@ const Navbar = (props) => {
                     </li>
                     <li className={props.active==='popular' ? 'nav-item nav-item--active':'nav-item'}>
                         <Link className='nav-item__link' to="">
-                            <svg class="img">
+                            <svg className="img">
                                 <use href={`${sprite}#icon-smile`}></use>
                             </svg>
                             <span className='nav-item__text'>Что читают</span>
@@ -32,7 +32,7 @@ const Navbar = (props) => {
                     </li>
                     <li className={props.active==='favorite' ? 'nav-item nav-item--active':'nav-item'}>
                         <Link className='nav-item__link' to="">
-                            <svg class="img">
+                            <svg className="img">
                                 <use href={`${sprite}#icon-heart`}></use>
                             </svg>
                             <span className='nav-item__text'>Избранное</span>
@@ -40,7 +40,7 @@ const Navbar = (props) => {
                     </li>
                     <li className={props.active==='profile' ? 'nav-item nav-item--active':'nav-item'}>
                         <Link className='nav-item__link' to="">
-                            <svg class="img">
+                            <svg className="img">
                                 <use href={`${sprite}#icon-house`}></use>
                             </svg>
                             <span className='nav-item__text'>Профиль</span>

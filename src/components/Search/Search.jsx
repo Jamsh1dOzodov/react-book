@@ -10,7 +10,9 @@ const Search = (props) => {
                 <div className='container'>
                     <div className="search-top">
                         {props.back &&
-                            <img src={arrow} alt="arrow icon" />
+                            <div className='search-top__arrow'>
+                                <img src={arrow} alt="arrow icon" />
+                            </div>
                         }
                         <h1 className='search-top__title'>{props.title}</h1>
                     </div>

@@ -12,6 +12,13 @@
         position: absolute;
         top: 5px;
         right: 11px;
+        z-index: 1;
+    }
+
+    //book__img
+    &__img{
+        width: 112px;
+        height: 145px;
     }
 
     //book__likeImg

@@ -7,7 +7,9 @@ const Home = () => {
             <div className="home">
                 <div className="container">
                     <div className='home-header'>
-                        <img className='home-header__logo' src={home_logo} />
+                        <div className='home-header__logo'>
+                            <img src={home_logo} />
+                        </div>
                         <h1 className="home-header__title">Book Reader</h1>
                     </div>
                     <h4 className='home__text'>Читай и слушай где угодно вместе с Book Reader</h4>
